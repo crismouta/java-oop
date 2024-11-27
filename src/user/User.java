@@ -1,16 +1,23 @@
 package user;
 
-import java.sql.SQLOutput;
-
 public class User {
     protected String name;
     protected String surname;
     private String email;
+    public static String status = "active";
 
     public User(String name, String surname, String email) {
         this.name = name;
         this.surname = surname;
         this.email = email;
+    }
+
+    public static String getStatus() {
+        return User.status;
+    }
+
+    public static void setStatus(String status) {
+        User.status = status;
     }
 
     public void register() {

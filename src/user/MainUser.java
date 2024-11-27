@@ -18,5 +18,11 @@ public class MainUser {
 
         user1.setName("Carla");
         System.out.println("User1 name: " + user1.getName());
+
+        System.out.println(User.getStatus());
+
+        User.setStatus("inactive");
+        System.out.println(User.getStatus());
+
     }
 }
